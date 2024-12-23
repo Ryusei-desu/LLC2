@@ -5,6 +5,11 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New ItemData",menuName="ScriptableObject/Item")]
 public class ItemData : ScriptableObject
 {
-    new public string name;
-    public Sprite icon;
+    [SerializeField]
+    new private string name;
+    [SerializeField]
+    private Sprite icon;
+    //以下は各パラメータを取得したいときに使う
+    public string Name => name;
+    public string Icon => icon;
 }
