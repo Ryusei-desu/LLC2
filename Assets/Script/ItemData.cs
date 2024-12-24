@@ -11,5 +11,5 @@ public class ItemData : ScriptableObject
     private Sprite icon;
     //以下は各パラメータを取得したいときに使う
     public string Name => name;
-    public string Icon => icon;
+    public  Sprite　Icon => icon;
 }
