@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 1
   name: plastic bottle
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 14930864a18bd544998caddcc36ede4d, type: 3}

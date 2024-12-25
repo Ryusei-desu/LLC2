@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Can
   m_EditorClassIdentifier: 
   id: 2
-  name: "\u7F36"
-  icon: {fileID: 0}
+  name: Can
+  icon: {fileID: 21300000, guid: 1ad73aa0c00199d44bbba3e3e6e55364, type: 3}
