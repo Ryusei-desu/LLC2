@@ -4,20 +4,31 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    public List<int> idList = new List<int>();
-    public List<int> quantityList = new List<int>();
+    public ItemSlot[] ItemSlot;
+    private bool checkComp;
 
-    public void AddItem(int id, int quantity)
+    public void InventoryCheck(string name, int quantity, Sprite icon)
     {
-        int checkIndex = idList.IndexOf(id);
-        if (checkIndex == -1)
+        checkComp = false;
+        for(int i = 0; i < ItemSlot.Length; i++) 
         {
-            idList.Add(id);
-            quantityList.Add(quantity);
+            if (ItemSlot[i].DisplayName == name && ItemSlot[i].isFull == false)
+            {
+                ItemSlot[i].AddItem(name, quantity, icon);
+                checkComp = true;
+                break;
+            }
         }
-        else
+        if (checkComp == false) 
         {
-            quantityList[checkIndex] += quantity;
+            for (int i = 0; i < ItemSlot.Length; i++)
+            {
+                if (ItemSlot[i].isUsed == false)
+                {
+                    ItemSlot[i].AddItem(name, quantity, icon);
+                    break;
+                }
+            }
         }
     }
 }

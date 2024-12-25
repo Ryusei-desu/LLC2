@@ -15,12 +15,13 @@ public class ItemEvent : MonoBehaviour
         {
             Item giveItem = ItemObject.GetComponent<Item>();
 
-            int id = giveItem.ItemData.Id;
+            string name = giveItem.ItemData.Name;
             int num = 1;
+            Sprite icon = giveItem.ItemData.Icon;
 
             Inventory playerInventory = Inventory.GetComponent<Inventory>();
 
-            playerInventory.AddItem(id, num);
+            playerInventory.InventoryCheck(name, num, icon);
         }
     }
 
