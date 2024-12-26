@@ -17,6 +17,8 @@ public class ItemSlot : MonoBehaviour
     private Image ItemIcon;
     [SerializeField]
     private TextMeshProUGUI QuantityText;
+    [SerializeField]
+    int max = 10;
 
 
 
@@ -29,9 +31,11 @@ public class ItemSlot : MonoBehaviour
         ItemIcon.sprite = Icon;
         ItemIcon.enabled = true;
 
-        QuantityText.text = quantity.ToString();
+        QuantityText.text = Quantity.ToString();
         QuantityText.enabled = true;
 
         isUsed = true;
+        if(Quantity==max)
+            isFull = true;
     }
 }
