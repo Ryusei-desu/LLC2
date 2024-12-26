@@ -11,7 +11,7 @@ public class ItemEvent : MonoBehaviour
 
     private void Update()
     {
-        if (isPlayerInRange && Input.GetKeyDown(KeyCode.Space))
+        if (isPlayerInRange==true && Input.GetKeyDown(KeyCode.Space))
         {
             Item giveItem = ItemObject.GetComponent<Item>();
 
