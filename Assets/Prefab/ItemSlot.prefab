@@ -231,6 +231,7 @@ MonoBehaviour:
   isUsed: 0
   ItemIcon: {fileID: 3656801564231398651}
   QuantityText: {fileID: 3608123932100869148}
+  max: 1
 --- !u!1 &6034431279082188377
 GameObject:
   m_ObjectHideFlags: 0
