@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Misaki_File/titile_main.unity
+    guid: 68af0558e9d9e2c4fb46abf7d3bbfcbd
+  - enabled: 1
+    path: Assets/Scenes/Riki_Scene.unity
+    guid: 5bdda218a3085cf4ca195b885c20085f
   m_configObjects: {}
