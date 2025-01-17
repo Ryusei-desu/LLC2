@@ -301,7 +301,7 @@ GameObject:
   - component: {fileID: 517044600}
   - component: {fileID: 517044599}
   - component: {fileID: 517044598}
-  - component: {fileID: 517044597}
+  - component: {fileID: 517044601}
   m_Layer: 0
   m_Name: gomibako
   m_TagString: Untagged
@@ -309,21 +309,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &517044597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 517044596}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b618713a02868d5459eb7f9da5f842ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EventMark: {fileID: 386821747}
-  Inventory: {fileID: 1960978914}
-  ItemObject: {fileID: 3438733867899010967, guid: 40acc192db32e0242aa8cf0c701ea446, type: 3}
 --- !u!61 &517044598
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -437,6 +422,20 @@ Transform:
   - {fileID: 386821749}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &517044601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517044596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa5568274258f8e4cb7a095768ac5b77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EventMark: {fileID: 386821747}
+  Inventory: {fileID: 1960978914}
 --- !u!1 &631316286
 GameObject:
   m_ObjectHideFlags: 0
