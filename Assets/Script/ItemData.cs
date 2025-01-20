@@ -11,8 +11,11 @@ public class ItemData : ScriptableObject
     new private string name;
     [SerializeField]
     private Sprite icon;
+    [SerializeField]
+    private int score;
     //以下は各パラメータを取得したいときに使う
     public int Id => id;
     public string Name => name;
     public  Sprite　Icon => icon;
+    public int Score => score;
 }
