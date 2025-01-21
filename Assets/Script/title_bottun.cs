@@ -33,6 +33,6 @@ public class TitleScreen : MonoBehaviour
     // à–¾ƒ{ƒ^ƒ“‚ª‰Ÿ‚³‚ê‚½‚Æ‚«‚ÉŒÄ‚Ño‚³‚ê‚éŠÖ”
     public void OnInstructionsButton()
     {
-        
+       SceneManager.LoadScene("title_setumei"); 
     }
 }
