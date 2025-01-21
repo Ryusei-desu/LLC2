@@ -24,7 +24,7 @@ public class time : MonoBehaviour
         if (!isPaused)
         {
             CountTime -= Time.deltaTime;
-            if (CountTime < 0) CountTime = 0;
+            if (CountTime < 0) TogglePause();
 
             min = (int)(CountTime / 60);
             sec = (int)(CountTime % 60);
