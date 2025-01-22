@@ -15,6 +15,6 @@ public class SetumeiBotuun : MonoBehaviour
     private void LoadScene()
     {
         Debug.Log("Shift or Space key pressed. Loading Riki_Scene...");
-        SceneManager.LoadScene("Riki_Scene");
+        SceneManager.LoadScene("game");
     }
 }

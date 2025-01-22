@@ -27,7 +27,7 @@ public class TitleScreen : MonoBehaviour
     // 開始ボタンが押されたときに呼び出される関数
     public void OnStartButton()
     {
-        SceneManager.LoadScene("Riki_Scene");
+        SceneManager.LoadScene("game");
     }
 
     // 説明ボタンが押されたときに呼び出される関数
