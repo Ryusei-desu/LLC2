@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class time : MonoBehaviour
 {
@@ -27,8 +28,7 @@ public class time : MonoBehaviour
             CountTime -= Time.deltaTime;
             if (CountTime < 0) 
             {
-                Time.timeScale = 0; // ƒQ[ƒ€‚ðˆêŽž’âŽ~
-                endseen.SetActive(true);
+                SceneManager.LoadScene("end_main"); // "NextScene" ‚ÍˆÚ“®æ‚ÌƒV[ƒ“–¼‚É’u‚«Š·‚¦‚Ä‚­‚¾‚³‚¢
             }
 
             min = (int)(CountTime / 60);
