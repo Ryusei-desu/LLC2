@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Misaki_File/end_main.unity
     guid: 1694d7cf30463cd4d9fc2da96e5222a6
+  - enabled: 1
+    path: Assets/Scenes/Misaki_File/title_setumei.unity
+    guid: c284b9869d36fd54781559ca3ba5708f
   m_configObjects: {}

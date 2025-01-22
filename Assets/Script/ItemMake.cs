@@ -18,7 +18,7 @@ public class ItmeMake : MonoBehaviour
 
     void Update()
     {
-        if (isPlayerInRange == true && Input.GetKeyDown(KeyCode.Space) && timer == false || Input.GetKeyDown(KeyCode.Space) && maked ==true)
+        if (isPlayerInRange == true && Input.GetKeyDown(KeyCode.Space) && timer == false || isPlayerInRange == true && Input.GetKeyDown(KeyCode.Space) && maked ==true)
         {
             SpriteRenderer playerInventory = Inventory.GetComponent<SpriteRenderer>();
 
@@ -34,7 +34,7 @@ public class ItmeMake : MonoBehaviour
             }
             Item needitem = NeedItem.GetComponent<Item>();
             string needname = needitem.ItemData.Name;
-            if (Inventory.tag == needname)
+            if (Inventory.tag == needname && maked==false)
             {
                 playerInventory.sprite = null;
                 Inventory.tag = "Untagged";
@@ -55,7 +55,7 @@ public class ItmeMake : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && timer == false)
+        if (other.CompareTag("Player"))
         {
             isPlayerInRange = true;
             EventMark.SetActive(true);
