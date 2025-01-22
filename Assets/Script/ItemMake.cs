@@ -7,10 +7,11 @@ public class ItmeMake : MonoBehaviour
     public GameObject EventMark;
     [SerializeField]
     public GameObject Inventory;
-    public GameObject GiveItem;
-    public GameObject NeedItem;
+    public GameObject[] GiveItem;
+    public GameObject[] NeedItem;
     public float CountTime = 5;
     private float count;
+    private int j;
 
     private bool isPlayerInRange = false;
     private bool maked = false;
@@ -24,7 +25,7 @@ public class ItmeMake : MonoBehaviour
 
             if (Inventory.tag == "Untagged" && maked == true)
             {
-                Item giveitem = GiveItem.GetComponent<Item>();
+                Item giveitem = GiveItem[j].GetComponent<Item>();
                 string name = giveitem.ItemData.Name;
                 Sprite icon = giveitem.ItemData.Icon;
                 playerInventory.sprite = icon;
@@ -32,14 +33,18 @@ public class ItmeMake : MonoBehaviour
                 maked = false;
                 timer = false;
             }
-            Item needitem = NeedItem.GetComponent<Item>();
-            string needname = needitem.ItemData.Name;
-            if (Inventory.tag == needname && maked==false)
+            for(int i = 0; i < NeedItem.Length;i++)
             {
-                playerInventory.sprite = null;
-                Inventory.tag = "Untagged";
-                timer = true;
-                count = CountTime;
+                Item needitem = NeedItem[i].GetComponent<Item>();
+                string needname = needitem.ItemData.Name;
+                if (Inventory.tag == needname && maked == false)
+                {
+                    playerInventory.sprite = null;
+                    Inventory.tag = "Untagged";
+                    timer = true;
+                    count = CountTime;
+                    j = i;
+                }
             }
         }
         if (timer == true)
