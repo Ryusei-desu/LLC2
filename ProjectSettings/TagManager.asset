@@ -6,6 +6,8 @@ TagManager:
   tags:
   - plastic bottle
   - can
+  - vinyl
+  - raincoat
   layers:
   - Default
   - TransparentFX
