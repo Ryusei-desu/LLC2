@@ -27,7 +27,7 @@ public class end_bottun : MonoBehaviour
     // 開始ボタンが押されたときに呼び出される関数
     public void OnStartButton()
     {
-        SceneManager.LoadScene("Riki_Scene");
+        SceneManager.LoadScene("game");
     }
 
     // バックボタンが押されたときに呼び出される関数
