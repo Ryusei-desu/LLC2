@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement; // シーン管理の名前空間を追加
 
 public class time : MonoBehaviour
 {
-    public GameObject endseen;
     public float CountTime = 5;
     public TextMeshProUGUI Timetext;
 
@@ -27,8 +27,8 @@ public class time : MonoBehaviour
             CountTime -= Time.deltaTime;
             if (CountTime < 0) 
             {
-                Time.timeScale = 0; // ゲームを一時停止
-                endseen.SetActive(true);
+                // シーンを移動する
+                SceneManager.LoadScene("end_main"); // "NextScene" は移動先のシーン名に置き換えてください
             }
 
             min = (int)(CountTime / 60);
