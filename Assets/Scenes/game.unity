@@ -310,7 +310,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b86d83434f26e4d4e86687ac3f6116f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tilemapFootsteps: []
+  tilemapFootsteps:
+  - tilemap: {fileID: 93810276}
+    footsteps: []
   audioSource: {fileID: 1644327076}
   defaultFootstep: {fileID: 8300000, guid: 5e3c324cf14e4104ab59e9a0c7260341, type: 3}
   defaultDuration: 0.55
