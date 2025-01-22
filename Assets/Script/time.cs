@@ -5,6 +5,7 @@ using TMPro;
 
 public class time : MonoBehaviour
 {
+    public GameObject endseen;
     public float CountTime = 5;
     public TextMeshProUGUI Timetext;
 
@@ -27,6 +28,7 @@ public class time : MonoBehaviour
             if (CountTime < 0) 
             {
                 Time.timeScale = 0; // ƒQ[ƒ€‚ðˆêŽž’âŽ~
+                endseen.SetActive(true);
             }
 
             min = (int)(CountTime / 60);
